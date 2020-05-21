@@ -18,6 +18,10 @@ public class Car {
         this.milesPerGallon = milesPerGallon;
     }
 
+    public void addGas(double gas) {
+        this.setGasTankLevel(gas + this.getGasTankLevel());
+    }
+
     public String getMake() {
         return make;
     }
